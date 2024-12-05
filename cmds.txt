@@ -1,0 +1,18 @@
+## Color MVN CLEAN 
+
+while ! mvn clean install; do echo -e "\033[31mBuild failed. Retrying...\033[0m"; sleep 2; done; echo -e "\033[32mBuild succeeded!\033[0m"
+
+## MVN CLEAN OG
+
+while ! mvn clean install; do echo "Build failed. Retrying..."; sleep 2; done; echo "Build succeeded!"
+
+## GIT push
+
+git add . && git commit -m "Your commit message here" && git push
+
+## bin file save as .bin
+
+@echo off
+cd C:\user\git
+standalone.git -c standalone-full.xml
+pause
